@@ -1,0 +1,32 @@
+kernel_left m:    2, n:    4, r:    2 passed
+kernel_left m:    4, n:    1, r:    1 passed
+kernel_left m:   10, n:   20, r:   10 passed
+kernel_left m:   20, n:    1, r:    1 passed
+kernel_left m:   20, n:   20, r:   18 passed
+kernel_left m:   30, n:    1, r:    1 passed
+kernel_left m:   30, n:   30, r:   28 passed
+kernel_left m:   80, n:    1, r:    1 passed
+kernel_left m:   80, n:   20, r:   20 passed
+kernel_left m:   80, n:   80, r:   78 passed
+kernel_left m:    4, n:    2, r:    2 passed
+kernel_left m:    1, n:    4, r:    1 passed
+kernel_left m:   20, n:   10, r:   10 passed
+kernel_left m:    1, n:   20, r:    1 passed
+kernel_left m:   20, n:   20, r:   19 passed
+kernel_left m:    1, n:   30, r:    1 passed
+kernel_left m:   30, n:   30, r:   30 passed
+kernel_left m:    1, n:   80, r:    1 passed
+kernel_left m:   20, n:   80, r:   20 passed
+kernel_left m:   80, n:   80, r:   79 passed
+kernel_left m:   10, n:   20, r:   10 passed
+kernel_left m:   10, n:   80, r:   10 passed
+kernel_left m:   10, n:   20, r:   10 passed
+kernel_left m:   10, n:   80, r:   10 passed
+kernel_left m:   70, n:   20, r:   20 passed
+kernel_left m:   70, n:   80, r:   70 passed
+kernel_left m:   70, n:   20, r:   20 passed
+kernel_left m:   70, n:   80, r:   70 passed
+kernel_left m:  770, n: 1600, r:  770 passed
+kernel_left m: 1764, n: 1345, r: 1345 passed
+All tests passed.
+PASS test_kernel (exit status: 0)
