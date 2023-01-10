@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
     MPI_Send(values, nb_values,MPI_DOUBLE, 1,tag,MPI_COMM_WORLD);
   } else if(rank == 1) {
     /* ? */
-    MPI_Recv(values, nb_values, MPI_DOUBLE,0,tag, MPI_STATUS_IGNORE);
+    MPI_Recv(values, nb_values, MPI_DOUBLE,0,tag,MPI_COMM_WORLD ,MPI_STATUS_IGNORE);
     printf("Me, process 1, received %d values (last = %g)"
            "from process 0.\n", nb_values, values[nb_values-1]);
   }
