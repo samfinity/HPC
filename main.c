@@ -63,7 +63,7 @@ char r[20];
 
  if (my_rank == 0) {
  for (int i=0; i<nb_procs; i++){
- MPI_Recv(r+i, 1, MPI_CHAR, MPI_ANY_SOURCE /* emetteur */,
+ MPI_Recv(r+i, 1, MPI_CHAR, i /* emetteur */,
  99 /* tag */, MPI_COMM_WORLD, &status);
  }
  r[nb_procs] = 0;
