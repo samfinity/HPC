@@ -79,7 +79,7 @@ MPI_Gather(&s,1,MPI_CHAR,r,1,MPI_CHAR,0,MPI_COMM_WORLD);
 if(my_rank == 0){
     r[nb_procs]=0;
     for(int i=0; i < nb_procs; i++){
-        pritnf("%c ", r[i]);
+        printf("%c ", r[i]);
     }
 }
 
