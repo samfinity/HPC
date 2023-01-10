@@ -59,18 +59,31 @@ char r[20];
  case 4 : s='o'; break ;
  }
 
- MPI_Send(&s, 1, MPI_CHAR, 0 /* destinataire */, 99 /* tag */, MPI_COMM_WORLD);
+MPI_Gather(&s,1,MPI_CHAR,r,1,MPI_CHAR,0,MPI_COMM_WORLD);
 
- if (my_rank == 0) {
- for (int i=0; i<nb_procs; i++){
- MPI_Recv(r+i, 1, MPI_CHAR, i /* emetteur */,
- 99 /* tag */, MPI_COMM_WORLD, &status);
- }
- r[nb_procs] = 0;
- printf("%d a recu : %s\n", my_rank, r);
- }
+// MPI_Send(&s, 1, MPI_CHAR, 0 /* destinataire */, 99 /* tag */, MPI_COMM_WORLD);
+//
+// if (my_rank == 0) {
+//
+//// for (int i=0; i<nb_procs; i++){
+//// MPI_Recv(r+i, 1, MPI_CHAR, i /* emetteur */,
+//// 99 /* tag */, MPI_COMM_WORLD, &status);
+//// }
+//
+// 
+//
+// r[nb_procs] = 0;
+// printf("%d a recu : %s\n", my_rank, r);
+// }
+ 
+if(my_rank == 0){
+    r[nb_procs]=0;
+    for(int i=0; i < nb_procs; i++){
+        pritnf("%c ", r[i]);
+    }
+}
 
- MPI_Finalize();
+MPI_Finalize();
  return 0;
  }
 
