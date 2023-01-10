@@ -4,9 +4,9 @@
 
 int main(int argc, char **argv){
 
-   int nbp, rank;
-   int value;
-   MPI_Status stat_msg;
+   //int nbp, rank;
+   //int value;
+   //MPI_Status stat_msg;
 
 
 
