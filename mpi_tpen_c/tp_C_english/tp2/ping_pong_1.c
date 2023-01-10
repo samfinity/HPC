@@ -18,8 +18,10 @@ int main(int argc, char *argv[]) {
   double values[nb_values];
   MPI_Status status;
 
-  MPI_Init(&argc, argv);
+  MPI_Init(&argc, &argv);
   /* ? */
+  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+  
   for(int i=0; i < nb_values;i++){
     values[i] = rand() / (RAND_MAX+1.);
   }
