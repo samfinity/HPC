@@ -18,6 +18,7 @@ int main(int argc, char *argv[]) {
   double values[nb_values];
   MPI_Status status;
 
+  MPI_Init(&argc, argv);
   /* ? */
   for(int i=0; i < nb_values;i++){
     values[i] = rand() / (RAND_MAX+1.);
@@ -36,5 +37,6 @@ int main(int argc, char *argv[]) {
   }
 
   /* ? */
+  MPI_Finalize();
   return 0;
 }
