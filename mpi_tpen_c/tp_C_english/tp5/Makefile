@@ -6,7 +6,7 @@
 ###############################################################################
 
 # Compileurs, options for compilation and link
-include ../arch/make_inc
+#include ../arch/make_inc
 
 OBJS = matrix_products.o
 

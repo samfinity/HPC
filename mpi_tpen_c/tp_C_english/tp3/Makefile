@@ -6,7 +6,7 @@
 ###############################################################################
 
 # Compiles, options for compilation and link
-include ../arch/make_inc
+#include ../arch/make_inc
 
 OBJS  = pi.o
 
